@@ -1,0 +1,582 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NEET & JEE Guidance | Mohan Ambigapathi</title>
+<meta name="description" content="Affordable online guidance and discussions for NEET and JEE students, parents and teachers. Book a 30-minute online session for ₹100.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f8fc;
+    color: #18304f;
+    line-height: 1.7;
+}
+
+header {
+    background: #ffffff;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #12345a;
+}
+
+.logo span {
+    color: #22a06b;
+}
+
+nav a {
+    text-decoration: none;
+    color: #18304f;
+    margin-left: 22px;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(135deg, #102b4c, #174a79);
+    color: white;
+    padding: 85px 8%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 800px;
+    margin: 0 auto 25px;
+    color: #e2eaf4;
+}
+
+.price {
+    display: inline-block;
+    background: #ffffff;
+    color: #18304f;
+    padding: 16px 30px;
+    border-radius: 12px;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price span {
+    color: #22a06b;
+}
+
+.btn {
+    display: inline-block;
+    background: #22a06b;
+    color: white;
+    text-decoration: none;
+    padding: 14px 26px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.btn:hover {
+    background: #188452;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 65px 25px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #12345a;
+}
+
+.section-title p {
+    color: #64748b;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 27px;
+    border-radius: 14px;
+    border: 1px solid #e3eaf2;
+    box-shadow: 0 5px 20px rgba(16,43,76,0.04);
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #174a79;
+}
+
+.card p {
+    color: #53657c;
+}
+
+.card .icon {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.topics {
+    background: white;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.highlight {
+    background: #eaf5ef;
+    border-left: 5px solid #22a06b;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.steps {
+    counter-reset: step;
+}
+
+.step {
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e3eaf2;
+}
+
+.step h3 {
+    color: #174a79;
+    margin-bottom: 8px;
+}
+
+.faq {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.faq h3 {
+    margin-bottom: 8px;
+}
+
+.booking {
+    background: #102b4c;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.booking h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.booking p {
+    color: #d7e4f2;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.booking .price {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #091d34;
+    color: #d7e4f2;
+    font-size: 14px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .booking h2 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Mohan<span>Ambigapathi</span></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#topics">Topics</a>
+        <a href="#about">About</a>
+        <a href="#booking">Book</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>NEET & JEE Guidance</h1>
+
+    <p>
+        Students, parents and teachers — discuss your questions,
+        academic choices, preparation journey and future options
+        in a supportive and practical environment.
+    </p>
+
+    <div class="price">
+        ₹100 <span>/ 30 Minutes</span>
+    </div>
+
+    <br>
+
+    <a href="#booking" class="btn">Book an Online Discussion</a>
+    <a href="#topics" class="btn btn-secondary">Explore Topics</a>
+</section>
+
+<section class="container" id="topics">
+
+    <div class="section-title">
+        <h2>What Can We Discuss?</h2>
+        <p>Bring your questions. Let's discuss your situation and possible options.</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="icon">🩺</div>
+            <h3>NEET Guidance</h3>
+            <p>
+                Preparation, score analysis, medical courses,
+                college options and admission-related decisions.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚙️</div>
+            <h3>JEE Guidance</h3>
+            <p>
+                JEE Main, JEE Advanced, engineering options,
+                IITs, NITs, IIITs and other institutions.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h3>College & Course Selection</h3>
+            <p>
+                Discuss courses, institutions, career opportunities,
+                preferences and alternative pathways.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">👨‍👩‍👧</div>
+            <h3>Parent Discussions</h3>
+            <p>
+                Understand your child's situation, expectations,
+                academic challenges and available options.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📊</div>
+            <h3>Rank & Counselling</h3>
+            <p>
+                Discuss rank, category, counselling choices,
+                college preferences and decision-making.
+        </div>
+
+        <div class="card">
+            <div class="icon">👩‍🏫</div>
+            <h3>Teachers & Mentors</h3>
+            <p>
+                Discussions on student challenges, academic decisions,
+                guidance approaches and mentoring.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="container topics">
+
+    <div class="section-title">
+        <h2>Common Questions</h2>
+        <p>There is no need to have a perfect question before booking.</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Should I choose NEET or JEE?</h3>
+            <p>Discuss your interests, strengths, expectations and available pathways.</p>
+        </div>
+
+        <div class="card">
+            <h3>Should I take another attempt?</h3>
+            <p>Evaluate your current performance, realistic goals and preparation plan.</p>
+        </div>
+
+        <div class="card">
+            <h3>What if my score is lower than expected?</h3>
+            <p>Explore alternatives, options and possible next steps without panic.</p>
+        </div>
+
+        <div class="card">
+            <h3>How do we select colleges?</h3>
+            <p>Discuss courses, college preferences, location, costs and career goals.</p>
+        </div>
+
+        <div class="card">
+            <h3>My child is confused. What should we do?</h3>
+            <p>Parents and students can jointly discuss concerns and possible decisions.</p>
+        </div>
+
+        <div class="card">
+            <h3>What are the alternatives?</h3>
+            <p>Discuss other medical, engineering, science and career pathways.</p>
+        </div>
+
+    </div>
+
+    <div class="highlight">
+        <strong>Important:</strong> These discussions provide experience-based
+        guidance and help with decision-making. They are not a substitute
+        for official counselling, professional mental-health support or
+        verified admission information.
+    </div>
+
+</section>
+
+<section class="container" id="about">
+
+    <div class="section-title">
+        <h2>Who Is Behind These Discussions?</h2>
+        <p>Experience, family perspectives and student journeys.</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Mohan Ambigapathi</h3>
+            <p>
+                Parent and discussion facilitator. Interested in helping
+                students and parents navigate educational choices,
+                competitive examinations and practical decisions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Medical Student Perspective</h3>
+            <p>
+                My daughter may join discussions where her experience
+                as a medical student can provide a useful student perspective.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Competitive Exam Student Perspective</h3>
+            <p>
+                My son may participate in discussions where his own
+                preparation and student experiences can be relevant.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="highlight">
+        We are not presenting ourselves as a coaching institute.
+        The purpose is to provide an open, affordable conversation
+        where students and parents can discuss their concerns and
+        explore practical options.
+    </div>
+
+</section>
+
+<section class="container">
+
+    <div class="section-title">
+        <h2>How It Works</h2>
+        <p>Simple, affordable and online.</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="step">
+            <h3>1. Contact Us</h3>
+            <p>Send your question and request a convenient time.</p>
+        </div>
+
+        <div class="step">
+            <h3>2. Confirm Your Session</h3>
+            <p>Confirm your appointment and make the ₹100 payment.</p>
+        </div>
+
+        <div class="step">
+            <h3>3. Share Your Situation</h3>
+            <p>Share your scores, doubts or decisions in advance if you wish.</p>
+        </div>
+
+        <div class="step">
+            <h3>4. Online Discussion</h3>
+            <p>Join a 30-minute online discussion at the agreed time.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container">
+
+    <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq">
+        <h3>Who can book?</h3>
+        <p>Students, parents and teachers interested in NEET, JEE and educational decisions.</p>
+    </div>
+
+    <div class="faq">
+        <h3>Can parents and students join together?</h3>
+        <p>Yes. Parents and students can participate together in the same session.</p>
+    </div>
+
+    <div class="faq">
+        <h3>How much does it cost?</h3>
+        <p>₹100 for 30 minutes. Longer discussions can be booked in additional slots.</p>
+    </div>
+
+    <div class="faq">
+        <h3>Is this coaching?</h3>
+        <p>No. This is an online discussion and guidance service, not a coaching class or guaranteed admission service.</p>
+    </div>
+
+    <div class="faq">
+        <h3>Will college or admission information be guaranteed?</h3>
+        <p>No. Admission rules, cut-offs and counselling information must be verified through the relevant official authorities.</p>
+    </div>
+
+</section>
+
+<section class="booking" id="booking">
+
+    <h2>Let's Discuss Your Questions</h2>
+
+    <p>
+        Whether you are a student preparing for NEET or JEE,
+        a parent trying to understand your child's options,
+        or a teacher looking for a discussion — you are welcome.
+    </p>
+
+    <div class="price">
+        ₹100 <span>/ 30 Minutes</span>
+    </div>
+
+    <p>Online discussion by appointment.</p>
+
+    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20would%20like%20to%20book%20a%20NEET%20%2F%20JEE%20guidance%20discussion."
+       class="btn">
+       WhatsApp to Book
+    </a>
+
+    <p style="margin-top:20px;font-size:14px;">
+        Replace the WhatsApp number in the link with your actual number before publishing.
+    </p>
+
+</section>
+
+<footer>
+    <p>© Mohan Ambigapathi | NEET & JEE Guidance</p>
+    <p>Affordable online discussions for students, parents and teachers.</p>
+</footer>
+
+<a href="https://wa.me/91XXXXXXXXXX"
+   class="whatsapp-float">
+   WhatsApp
+</a>
+
+</body>
+</html>
